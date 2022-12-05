@@ -33,7 +33,7 @@ resource "aws_db_instance" "PtShGgAdi2" {
   username                = "slaflheafllaflaehf"
   password                = "something"
   skip_final_snapshot     = true
-  multi_az = false
+  multi_az                = false
 }
 
 resource "aws_db_instance" "PtShGgAdi3" {
@@ -46,7 +46,7 @@ resource "aws_db_instance" "PtShGgAdi3" {
   backup_retention_period             = 30
   iam_database_authentication_enabled = false
   auto_minor_version_upgrade          = false
-  publicly_accessible                 = true
+  publicly_accessible                 = false
   username                            = "slaflheafllaflaehf"
   password                            = "something"
   skip_final_snapshot                 = true
